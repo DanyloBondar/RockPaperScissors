@@ -128,9 +128,9 @@ const score = JSON.parse(localStorage.getItem('score')) || { wins: 0, losses: 0,
         }
       } else if (computerMove === 'scissors') {
         if (userMove === 'rock') {
-          result = 'lose';
-        } else if (userMove === 'paper') {
           result = 'win';
+        } else if (userMove === 'paper') {
+          result = 'lose';
         } else if (userMove === 'scissors') {
           result = 'tie';
         }
